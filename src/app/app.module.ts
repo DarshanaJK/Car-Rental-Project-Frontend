@@ -10,14 +10,10 @@ import en from '@angular/common/locales/en';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-//NG ZORRO IMPORTS
-import {NzSpinModule} from "ng-zorro-antd/spin";
-import {NzFormModule} from "ng-zorro-antd/form";
-import {NzInputModule} from "ng-zorro-antd/input";
-import {NzLayoutModule} from "ng-zorro-antd/layout";
-import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzMessageService} from "ng-zorro-antd/message";
+import {NgZorroImportsModule} from "./NgZorroImportsModule";
+
+
 
 registerLocaleData(en);
 
@@ -33,14 +29,8 @@ registerLocaleData(en);
         FormsModule,
         HttpClientModule,
         BrowserAnimationsModule,
-
-        //NG ZORRO IMPORTS
-        NzSpinModule,
-        NzFormModule,
-        NzInputModule,
-        NzLayoutModule,
-        NzButtonModule,
         ReactiveFormsModule,
+        NgZorroImportsModule,
     ],
   providers: [NzMessageService],
   bootstrap: [AppComponent]
